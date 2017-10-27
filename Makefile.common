@@ -1,0 +1,17 @@
+NULL =
+
+AM_V_VALA = $(am__v_VALA_$(V))
+am__v_VALA_ = $(am__v_VALA_$(AM_DEFAULT_VERBOSITY))
+am__v_VALA_0 = @echo "  VALAC " $?;
+
+AM_CPPFLAGS = \
+	-include $(CONFIG_HEADER) \
+	-DDATADIR=\"$(datadir)\" \
+	-DPKGDATADIR=\"$(pkgdatadir)\" \
+	-DLIBDIR=\"$(libdir)\" \
+	-DPKGLIBDIR=\"$(pkglibdir)\" \
+	-DPLUGINDIR=\"$(pkglibdir)/plugins\" \
+	-DWM_SCHEMA=\"com.deepin.wrap.gnome.desktop.wm\" \
+	-DSCHEMA=\"com.deepin.wrap.pantheon.desktop.gala\" \
+	-DDEEPIN_SCHEMA=\"com.deepin.dde\" \
+	$(NULL)

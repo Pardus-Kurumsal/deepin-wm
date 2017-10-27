@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+_Name=Multitasking View
+_Comment=View all open windows and workspaces
+GenericName=Multitasking View
+Icon=deepin-multitasking-view
+Terminal=false
+Categories=GNOME;GTK;System;
+Exec=dbus-send --session --dest=com.deepin.wm --print-reply /com/deepin/wm com.deepin.wm.PerformAction int32:1
+OnlyShowIn=Deepin;
+X-AppStream-Ignore=true
